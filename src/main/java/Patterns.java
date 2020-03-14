@@ -1,13 +1,14 @@
 package main.java;
 
+import javax.swing.*;
 import java.sql.SQLOutput;
 
 public class Patterns {
 
     public static void main(String[] args) {
         //Pattern1();
-        Pattern2();
-        //Fibonacci();
+        //Pattern2();
+        Fibonacci();
 
     }//end of main()
 
@@ -56,10 +57,12 @@ public class Patterns {
 
     public static void Fibonacci()
     {
+        int n = Integer.parseInt(JOptionPane.showInputDialog(null,"Enter number of terms"));
+
         int i = 0, j = 1;
         System.out.print(i + " " + j + " ");
 
-        for(int x = 0; x<10; x++)
+        for(int x = 0; x<n-1; x++)
         {
             System.out.print(i+j + " ");
             int temp = j;
