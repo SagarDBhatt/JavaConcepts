@@ -3,8 +3,12 @@ package main.java;
 public class Patterns {
 
     public static void main(String[] args) {
+        Pattern1();
 
+    }//end of main()
 
+    public static void Pattern1()
+    {
         for(int i =1; i<=4;i++)
         {
             for(int j=1; j<=4;j++)
@@ -25,6 +29,8 @@ public class Patterns {
             }
             System.out.println();
         }
+    }
 
-    }//end of main()
+
+
 }//end of class
