@@ -6,8 +6,8 @@ public class Patterns {
 
     public static void main(String[] args) {
         //Pattern1();
-        //Pattern2();
-        Fibonacci();
+        Pattern2();
+        //Fibonacci();
 
     }//end of main()
 
@@ -37,6 +37,13 @@ public class Patterns {
 
     public static void Pattern2()
     {
+/*
+        1
+        2 2
+        3 3 3
+        4 4 4 4
+        5 5 5 5 5
+*/
         for(int i=1;i<=5;i++)
         {
             for(int j=1;j<=i;j++)
