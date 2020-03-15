@@ -11,7 +11,8 @@ public class Patterns {
         //Pattern2();
         //Fibonacci();
         //PalindromeNumber();
-        perfectNumber();
+        //perfectNumber();
+        armstrongNumber();
 
     }//end of main()
 
@@ -113,6 +114,28 @@ public class Patterns {
 
         else
             JOptionPane.showMessageDialog(null,"Not a Perfect number");
+    }
+
+    public static void armstrongNumber()
+    {
+/*        Armstrong Number: Sum of Cube of each number is same as number.
+        Eg. 153 = 1^3 + 5^3 + 3^3 = 1 + 125 + 27 = 153 */
+        int n = Integer.parseInt(JOptionPane.showInputDialog(null,"Enter Number"));
+        int sum=0, rem=0, temp = n;
+
+        while(n>0)
+        {
+            rem = n%10; // 3, 5, 1
+            n = n/10;   // 15, 1, 1
+            sum += (rem*rem*rem);   // 27, (27 + 125 = 152), (152 + 1 =153)
+        }
+
+        if(sum==temp)
+            JOptionPane.showMessageDialog(null,"Number is Armstrong");
+
+        else
+            JOptionPane.showMessageDialog(null,"Not a Armstrong number");
+
 
     }
 
