@@ -10,7 +10,8 @@ public class Patterns {
         //Pattern1();
         //Pattern2();
         //Fibonacci();
-        PalindromeNumber();
+        //PalindromeNumber();
+        perfectNumber();
 
     }//end of main()
 
@@ -82,7 +83,7 @@ public class Patterns {
         while(n>0) {
             r = n % 10; //1, 2, 1
             n = n / 10;  // 12, 1, 1
-            rev = (rev * 10) + r ; // 1, 12, 12
+            rev = (rev * 10) + r ; // 1, 12, 121
         }
         //System.out.println(rev);
         if(rev==temp)
@@ -90,6 +91,29 @@ public class Patterns {
 
         else
             JOptionPane.showMessageDialog(null,"Not Palindrome");
+    }
+
+    public static void perfectNumber()
+    {
+/*        Number whose sum of factors is equal to the number itselt is Perfect number.
+        eg. Factors of 6 = 1,2,3. Sum = 1+2+3 = 6. So, 6 is a perfect number. */
+
+        int n = Integer.parseInt(JOptionPane.showInputDialog(null,"Enter Number"));
+        int sum=0, fact=0;
+
+        for(int i=1;i<n;i++)
+        {
+            if(n%i == 0)
+            {
+                sum += i;
+            }
+        }
+        if(sum == n)
+            JOptionPane.showMessageDialog(null,"Number is Perfect");
+
+        else
+            JOptionPane.showMessageDialog(null,"Not a Perfect number");
 
     }
+
 }//end of class
