@@ -9,7 +9,8 @@ public class Patterns {
     public static void main(String[] args) {
         //Pattern1();
         //Pattern2();
-        Fibonacci();
+        //Fibonacci();
+        PalindromeNumber();
 
     }//end of main()
 
@@ -74,18 +75,21 @@ public class Patterns {
 
     public static void PalindromeNumber()
     {
-         int n = Integer.parseInt(JOptionPane.showInputDialog(null,"Enter Number"));
-         int size=0,decimal=0;
-         int[] 
+        //n = 121
+        int n = Integer.parseInt(JOptionPane.showInputDialog(null,"Enter Number"));
+        int rev=0,temp = n,r=0;
 
-         while(decimal != 0)
-         {
-             for(int i = 10; i < n; i *= 10)
-             {
+        while(n>0) {
+            r = n % 10; //1, 2, 1
+            n = n / 10;  // 12, 1, 1
+            rev = (rev * 10) + r ; // 1, 12, 12
+        }
+        //System.out.println(rev);
+        if(rev==temp)
+            JOptionPane.showMessageDialog(null,"Number is Palindrome");
 
-             }
-         }
+        else
+            JOptionPane.showMessageDialog(null,"Not Palindrome");
 
     }
-
 }//end of class
