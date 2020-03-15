@@ -1,6 +1,7 @@
 package main.java;
 
 import javax.swing.*;
+import java.awt.*;
 import java.sql.SQLOutput;
 
 public class Patterns {
@@ -69,6 +70,22 @@ public class Patterns {
             j = i + j;
             i = temp;
         }
+    }
+
+    public static void PalindromeNumber()
+    {
+         int n = Integer.parseInt(JOptionPane.showInputDialog(null,"Enter Number"));
+         int size=0,decimal=0;
+         int[] 
+
+         while(decimal != 0)
+         {
+             for(int i = 10; i < n; i *= 10)
+             {
+
+             }
+         }
+
     }
 
 }//end of class
