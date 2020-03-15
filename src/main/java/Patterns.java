@@ -135,8 +135,6 @@ public class Patterns {
 
         else
             JOptionPane.showMessageDialog(null,"Not a Armstrong number");
-
-
     }
 
 }//end of class
