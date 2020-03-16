@@ -12,7 +12,8 @@ public class Patterns {
         //Fibonacci();
         //PalindromeNumber();
         //perfectNumber();
-        armstrongNumber();
+        //armstrongNumber();
+        primeNumber();
 
     }//end of main()
 
@@ -137,4 +138,24 @@ public class Patterns {
             JOptionPane.showMessageDialog(null,"Not a Armstrong number");
     }
 
+    public static void primeNumber(){
+        int n = Integer.parseInt(JOptionPane.showInputDialog(null,"Enter Number"));
+        boolean prime = false;
+
+        for(int i = 2; i<n; i++)
+        {
+            if(n%i==0)
+                prime = true;
+
+            else
+                prime=false;
+        }
+
+        if(prime)
+        {
+            JOptionPane.showMessageDialog(null,"Prime number");
+        }
+        else
+            JOptionPane.showMessageDialog(null,"Not a Prime Number");
+    }
 }//end of class
